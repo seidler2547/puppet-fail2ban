@@ -290,8 +290,7 @@ enabled = <%= "ssh" in $fail2ban::jails %>
 # See "tests/files/logs/sshd" or "filter.d/sshd.conf" for usage example and details.
 #mode   = normal
 port    = ssh
-logpath = %(sshd_log)s
-backend = %(sshd_backend)s
+backend = systemd
 
 
 [dropbear]
